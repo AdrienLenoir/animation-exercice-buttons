@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslateblue;
+  height: 100vh;
+  margin: 0;
+}
+
+.button {
+  display: block;
+  border: 5px solid white;
+  padding: 10px 20px;
+  transition:
+          background-color .5s ease-in-out,
+          color .5s ease-in-out,
+          transform .5s ease-in-out;
+  color: white;
+  text-decoration: none;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.button-background-anim:hover {
+  color: black;
+  background-color: white;
+}
+
+.button-scale-anim:hover {
+  transform: scale(1.2);
+}
+
+.button-toright-anim:hover {
+  color: black;
+  background-color: white;
+  transform: translateX(50%);
+}
